@@ -261,7 +261,7 @@ def main():
         if len(sys.argv)!= 5:
             print("Please enter keyword, start date and end date")
         else:
-            Popular(sys.argv[2],sys.argv[3],sys.argv[4])
+            Keyword(sys.argv[2],sys.argv[3],sys.argv[4])
     else:
         print('please check your input')
     print('Time spent:',np.round((time.time()-start_time)/60,2),'min')
