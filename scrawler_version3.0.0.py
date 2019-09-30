@@ -15,6 +15,7 @@ import pandas as pd
 import os
 import sys
 import pandas
+import numpy as np
 start_time = time.time()
 
 def crawl():
@@ -263,7 +264,7 @@ def main():
             Popular(sys.argv[2],sys.argv[3],sys.argv[4])
     else:
         print('please check your input')
-    print('Time spent: ',(time.time()-start_time())/60,' min')
+    print('Time spent:',np.round((time.time()-start_time)/60,2),'min')
 
-if '__name__' == '__main__':
+if __name__ == '__main__':
     main()
